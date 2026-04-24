@@ -27,9 +27,9 @@ E-commerce businesses lose revenue daily to three silent killers: **customer chu
 
 ---
 
-## 📊 Dashboard Pages
+## 📊 Dashboard Tabs
 
-| Page | Description |
+| Tab | Description |
 |---|---|
 | 📊 Overview | Revenue trends, KPI scorecards, category & country breakdown |
 | 👥 Customer Insights | RFM heatmap, segment scatter, K-Means clustering (interactive k) |
@@ -43,7 +43,7 @@ E-commerce businesses lose revenue daily to three silent killers: **customer chu
 
 ```
 ecommerce_dashboard/
-├── app.py                   # Main entry point + sidebar navigation
+├── app.py                   # Single-page dashboard with tabbed navigation
 ├── requirements.txt
 ├── data/
 │   ├── customers.csv        # 8,000 customer profiles
@@ -53,14 +53,8 @@ ecommerce_dashboard/
 ├── utils/
 │   ├── data_loader.py       # Caching, feature engineering, RFM scoring
 │   └── styling.py           # Dark theme, metric cards, Plotly defaults
-├── models/
-│   └── ml_models.py         # GBM churn, K-Means segmentation, ETS forecasting
-└── pages/
-    ├── 01_overview.py
-    ├── 02_customer_insights.py
-    ├── 03_churn_analysis.py
-    ├── 04_revenue_forecasting.py
-    └── 05_experiment_lab.py
+└── models/
+    └── ml_models.py         # GBM churn, K-Means segmentation, ETS forecasting
 ```
 
 ---
