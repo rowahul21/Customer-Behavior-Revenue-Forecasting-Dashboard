@@ -42,7 +42,7 @@ st.markdown("""
         CustomerIQ Intelligence Platform
     </h1>
     <p style="color:#10B981; font-size:1.1rem; margin-top:12px; font-weight:600;">
-        🎯 ML-Driven Customer Analytics & Revenue Intelligence Dashboard
+        ML-Driven Customer Analytics & Revenue Intelligence Dashboard
     </p>
     <div style="font-size:0.9rem; color:#94A3B8; margin-top:8px; line-height:1.6;">
         <strong>Built with:</strong> Scikit-learn · Streamlit · Holt's Exponential Smoothing<br>
@@ -87,10 +87,10 @@ if sel_years:
 
 # ── Tabs ───────────────────────────────────────────────────────────────────────
 tab1, tab2, tab3, tab4 = st.tabs([
-    "📊 Overview",
-    "👥 Customer Insights",
-    "⚠️ Churn Prediction",
-    "📈 Revenue Forecast",
+    "Overview",
+    "Customer Insights",
+    "Churn Prediction",
+    "Revenue Forecast",
 ])
 
 # ════════════════════════════════════════════════════════════════════════════════
@@ -100,7 +100,7 @@ with tab1:
     st.markdown("""
     <div style="padding:24px 0 12px 0;">
         <h2 style="color:#F1F5F9; font-size:2rem; font-weight:800; margin:0;">
-            📊 Executive Summary
+            Executive Summary
         </h2>
         <p style="color:#94A3B8; font-size:0.95rem; margin-top:8px;">
             Key performance indicators, revenue trends, and strategic opportunities
@@ -276,7 +276,7 @@ with tab2:
     st.markdown("""
     <div style="padding:24px 0 12px 0;">
         <h2 style="color:#F1F5F9; font-size:2rem; font-weight:800; margin:0;">
-            👥 Customer Segmentation & RFM Analysis
+            Customer Segmentation & RFM Analysis
         </h2>
         <p style="color:#94A3B8; font-size:0.95rem; margin-top:8px;">
             Behavioral clustering, lifetime value profiling, and high-impact customer segments
@@ -468,7 +468,7 @@ with tab3:
     st.markdown("""
     <div style="padding:24px 0 12px 0;">
         <h2 style="color:#F1F5F9; font-size:2rem; font-weight:800; margin:0;">
-            ⚠️ Churn Risk Detection & Retention
+            Churn Risk Detection & Retention
         </h2>
         <p style="color:#94A3B8; font-size:0.95rem; margin-top:8px;">
             Gradient Boosting classifier to identify and profile at-risk customers
