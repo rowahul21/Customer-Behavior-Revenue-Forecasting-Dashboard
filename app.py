@@ -90,7 +90,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "Customer Insights",
     "Churn Analysis",
     "Revenue Forecasting",
-    "Experiment Lab",
+    #"Experiment Lab",
 ])
 
 # ════════════════════════════════════════════════════════════════════════════════
