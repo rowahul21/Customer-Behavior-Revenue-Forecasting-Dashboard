@@ -86,11 +86,11 @@ if sel_years:
 
 # ── Tabs ───────────────────────────────────────────────────────────────────────
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "📊 Overview",
-    "👥 Customer Insights",
-    "⚠️ Churn Analysis",
-    "📈 Revenue Forecasting",
-    "🧪 Experiment Lab",
+    "Overview",
+    "Customer Insights",
+    "Churn Analysis",
+    "Revenue Forecasting",
+    "Experiment Lab",
 ])
 
 # ════════════════════════════════════════════════════════════════════════════════
@@ -479,7 +479,7 @@ with tab3:
     # ── Model performance cards ────────────────────────────────────────────────
     section_header("Model Performance")
 
-    with st.spinner("🤖 Training Gradient Boosting model..."):
+    with st.spinner("Training Gradient Boosting model..."):
         model, X_test, y_test, y_proba, importances, metrics = train_churn_model(master)
 
     cols = st.columns(5)
