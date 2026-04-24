@@ -341,17 +341,17 @@ with tab2:
             hole=0.5,
         )
         fig_pie.update_traces(textinfo="percent+label", textposition="outside")
-        # pindahin legend ke bawah
+        # closer legend so leader lines read clearly
         fig_pie.update_layout(
             legend=dict(
                 orientation="h",
                 yanchor="top",
-                y=-0.2,
+                y=-0.1,
                 xanchor="center",
                 x=0.5,
                 font=dict(size=10),
             ),
-            margin=dict(t=40, b=80)
+            margin=dict(t=40, b=60)
         )
         apply_chart_style(fig_pie, height=420)
         st.plotly_chart(fig_pie, use_container_width=True)
