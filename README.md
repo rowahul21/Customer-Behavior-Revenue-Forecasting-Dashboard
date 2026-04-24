@@ -7,7 +7,7 @@
 
 ## Dashboard Preview
 ![Dashboard Preview](assets/preview.png)
-
+**Dashboard Link** : https://customer-behavior.streamlit.app/
 ---
 
 ## Business Problem
