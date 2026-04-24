@@ -1,11 +1,16 @@
-# 🛒 CustomerIQ — Customer Intelligence & Revenue Optimization Dashboard
+# CustomerBehavior — Customer Intelligence & Revenue Optimization Dashboard
 
 > A production-grade machine learning portfolio project built on 25,000 real e-commerce transactions.
 > Showcasing churn prediction, RFM segmentation, revenue forecasting, and interactive business simulation.
 
 ---
 
-## 🎯 Business Problem
+## Dashboard Preview
+![Dashboard Preview](assets/preview.png)
+
+---
+
+## Business Problem
 
 E-commerce businesses lose revenue daily to three silent killers: **customer churn**, **low repeat purchase rates**, and **unpredictable revenue**. This project answers four high-impact business questions:
 
@@ -16,7 +21,7 @@ E-commerce businesses lose revenue daily to three silent killers: **customer chu
 
 ---
 
-## 🧠 ML Experiments
+## ML Experiments
 
 | Experiment | Method | Metric |
 |---|---|---|
@@ -27,18 +32,18 @@ E-commerce businesses lose revenue daily to three silent killers: **customer chu
 
 ---
 
-## 📊 Dashboard Tabs
+## Dashboard Tabs
 
 | Tab | Description |
 |---|---|
-| 📊 Overview | Revenue trends, KPI scorecards, category & country breakdown |
-| 👥 Customer Insights | RFM heatmap, segment scatter, K-Means clustering (interactive k) |
-| ⚠️ Churn Analysis | GBM model results, ROC curve, feature importance, live simulator |
-| 📈 Revenue Forecasting | 12-month forecast with CI bands, seasonality, YoY comparison |
+| Overview | Revenue trends, KPI scorecards, category & country breakdown |
+| Customer Insights | RFM heatmap, segment scatter, K-Means clustering (interactive k) |
+| Churn Analysis | GBM model results, ROC curve, feature importance, live simulator |
+| Revenue Forecasting | 12-month forecast with CI bands, seasonality, YoY comparison |
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 ecommerce_dashboard/
@@ -56,25 +61,7 @@ ecommerce_dashboard/
     └── ml_models.py         # GBM churn, K-Means segmentation, ETS forecasting
 ```
 
----
-
-## 🚀 Quick Start
-
-```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/customeriq-dashboard.git
-cd customeriq-dashboard
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the dashboard
-streamlit run app.py
-```
-
----
-
-## 🔑 Key Features Engineered
+## Key Features Engineered
 
 | Feature | Description |
 |---|---|
@@ -90,7 +77,7 @@ streamlit run app.py
 
 ---
 
-## 💡 Business Insights Discovered
+## Business Insights Discovered
 
 - **Churn is predictable**: Recency and cancel rate are the top predictors — intervene within 90 days of inactivity
 - **Champions drive disproportionate revenue**: Top 15% of customers generate ~40% of revenue
@@ -100,7 +87,7 @@ streamlit run app.py
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Dashboard**: Streamlit
 - **ML / Data**: Scikit-learn, Pandas, NumPy
@@ -109,20 +96,13 @@ streamlit run app.py
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
-- [ ] Deploy to Streamlit Cloud with persistent model caching
-- [ ] Add Prophet-based forecasting with holiday effects
-- [ ] Implement association rule mining (Apriori) for basket analysis
-- [ ] Add email alert simulation for high-risk churn customers
-- [ ] Integrate real-time data pipeline (Kafka → Postgres → Streamlit)
-
----
-
-## 👤 Author
-
-**[Your Name]** · Data Scientist  
-[LinkedIn](https://linkedin.com) · [Portfolio](https://yoursite.com) · [Email](mailto:you@email.com)
+- Deploy to Streamlit Cloud with persistent model caching
+- Add Prophet-based forecasting with holiday effects
+- Implement association rule mining (Apriori) for basket analysis
+- Add email alert simulation for high-risk churn customers
+- Integrate real-time data pipeline (Kafka → Postgres → Streamlit)
 
 ---
 
