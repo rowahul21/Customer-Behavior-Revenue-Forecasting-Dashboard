@@ -35,7 +35,6 @@ E-commerce businesses lose revenue daily to three silent killers: **customer chu
 | 👥 Customer Insights | RFM heatmap, segment scatter, K-Means clustering (interactive k) |
 | ⚠️ Churn Analysis | GBM model results, ROC curve, feature importance, live simulator |
 | 📈 Revenue Forecasting | 12-month forecast with CI bands, seasonality, YoY comparison |
-| 🧪 Experiment Lab | Revenue what-if simulator, product intelligence, CLV explorer |
 
 ---
 
