@@ -7,31 +7,64 @@ Run with:  streamlit run app.py
 import streamlit as st
 from utils.styling import set_page_config, inject_css
 
-set_page_config("Overview")
-inject_css()
+# set_page_config("Overview")
+# inject_css()
+
+st.set_page_config(
+    page_title="CustomerIQ",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
 # ── Sidebar navigation ─────────────────────────────────────────────────────────
-st.markdown("""
-    <style>
-        /* Hide default Streamlit menu (pages) */
-        [data-testid="stSidebarNav"] {
-            display: none;
-        }
-        /* Hide hamburger menu */
-        #MainMenu {visibility: hidden;}
-        /* Hide footer */
-        footer {visibility: hidden;}
-    </style>
-""", unsafe_allow_html=True)
+# st.markdown("""
+#     <style>
+#         /* Hide default Streamlit menu (pages) */
+#         [data-testid="stSidebarNav"] {
+#             display: none;
+#         }
+#         /* Pastikan tombol sidebar muncul */
+#         [data-testid="collapsedControl"] {
+#             display: block !important;
+#         }
 
-st.sidebar.markdown("""
-<div style="text-align:center; padding: 16px 0 24px 0;">
-    <div style="font-size:1.2rem; font-weight:800; color:#F1F5F9;">CustomerIQ</div>
-    <div style="font-size:0.72rem; color:#64748B; letter-spacing:0.1em;">
-        CUSTOMER INTELLIGENCE PLATFORM
-    </div>
-</div>
-""", unsafe_allow_html=True)
+#         /* Optional: kasih jarak biar ga ketimpa */
+#         [data-testid="collapsedControl"] button {
+#             margin-top: 10px;
+#         }
+#         /* Hide hamburger menu */
+#         #MainMenu {visibility: hidden;}
+#         /* Hide footer */
+#         footer {visibility: hidden;}
+#     </style>
+# """, unsafe_allow_html=True)
+
+# # st.markdown("""
+# # <style>
+# # /* Hanya hide menu page list */
+# # [data-testid="stSidebarNav"] {
+# #     display: none;
+# # }
+
+# # /* Pastikan tombol sidebar SELALU muncul */
+# # [data-testid="collapsedControl"] {
+# #     position: fixed;
+# #     top: 10px;
+# #     left: 10px;
+# #     z-index: 9999;
+# #     display: block !important;
+# # }
+# # </style>
+# # """, unsafe_allow_html=True)
+
+# # st.sidebar.markdown("""
+# # <div style="text-align:center; padding: 16px 0 24px 0;">
+# #     <div style="font-size:1.2rem; font-weight:800; color:#F1F5F9;">CustomerIQ</div>
+# #     <div style="font-size:0.72rem; color:#64748B; letter-spacing:0.1em;">
+# #         CUSTOMER INTELLIGENCE PLATFORM
+# #     </div>
+# # </div>
+# # """, unsafe_allow_html=True)
 
 page = st.sidebar.radio(
     "Navigation",
@@ -54,9 +87,26 @@ st.sidebar.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-# ── Page routing ───────────────────────────────────────────────────────────────
+# # ── Page routing ───────────────────────────────────────────────────────────────
 if   "Overview"          in page: exec(open("pages/01_overview.py", encoding="utf-8").read())
 elif "Customer Insights" in page: exec(open("pages/02_customer_insights.py", encoding="utf-8").read())
 elif "Churn"             in page: exec(open("pages/03_churn_analysis.py", encoding="utf-8").read())
 elif "Revenue"           in page: exec(open("pages/04_revenue_forecasting.py", encoding="utf-8").read())
 elif "Experiment"        in page: exec(open("pages/05_experiment_lab.py", encoding="utf-8").read())
+
+# from pages import overview, customer_insights, churn_analysis, revenue_forecasting, experiment_lab
+
+# if page == "Oerview":
+#     overview.run()
+
+# elif page == "Customer Insights":
+#     customer_insights.run()
+
+# elif page == "Churn Analysis":
+#     churn_analysis.run()
+
+# elif page == "Revenue Forecasting":
+#     revenue_forecasting.run()
+
+# elif page == "Experiment Lab":
+#     experiment_lab.run()
