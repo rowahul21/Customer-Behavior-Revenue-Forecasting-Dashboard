@@ -106,4 +106,4 @@ ecommerce_dashboard/
 
 ---
 
-*Dataset: Synthetic e-commerce dataset · 25K orders · 8K customers · Jan 2020 – Mar 2026*
+*Dataset: [E-Commerce Customer Behavior & Sales 2020–2026](https://www.kaggle.com/datasets/meruvakodandasuraj/e-commerce-customer-behavior-and-sales-20202026?select=monthly_revenue.csv) · 25K orders · 8K customers
